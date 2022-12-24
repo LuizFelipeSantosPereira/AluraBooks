@@ -1,0 +1,81 @@
+.novidades{
+    background-color: var(--branco);
+    padding: 1em;
+}
+.novidades__titulo, .novidades__descricao{
+    color:var(--azul);
+}
+.novidades__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+.novidades__descricao{
+    font-weight: 300;
+    margin: 1em 0 1.5em;
+}
+.novidades__email{
+    background-color: transparent;
+    border: solid 2px var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+    color: var(--azul);
+    outline: none;
+    transition: 250ms;
+    font-size: 16px;
+}
+.novidades__email::placeholder{
+    color: var(--azul);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    padding-left: 3em;
+    background: url("../img/Email.svg") no-repeat 1em;
+}
+.novidades__email:focus{
+    border: 2px solid #00062c;
+    transition: 500ms;
+}
+.novidades__email:focus::placeholder{
+    font-weight: 500;
+    transition: 500ms;
+}
+.novidades__container{
+    display: block;
+}
+@media screen and (min-width: 1024px){
+    .novidades{
+        padding: 3em 2em;
+    }
+    .novidades__titulo{
+        font-size: 24px;
+        grid-area: novidades__titulo;
+    }
+    .novidades__descricao{
+        grid-area: novidades__descricao;
+    }
+    .novidades__email{
+        grid-area: novidades__email;
+
+    }
+    .novidades__container{
+        display: grid;
+        padding-left: 5em;
+        column-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "novidades__titulo novidades__email"
+            "novidades__descricao novidades__email";
+    }
+    .novidades__email{
+        font-size: 24px;
+        padding: 0;
+        height: 75%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1728px){
+    .novidades{
+        padding: 4em 25vw 6em 25vw;
+    }
+}

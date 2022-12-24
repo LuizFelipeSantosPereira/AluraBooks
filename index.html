@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AluraBooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="cabeçalho__container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__label">
+                <span class="cabeçalho__menu-hamburger container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.png" class="container__imagem">
+            <h1 class="container__titulo"><strong class="container__titulo--negrito">Alura</strong>Books</h1>
+        </div>
+        <ul class="cabeçalho__lista">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__label">
+                <li class="cabeçalho__lista--item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <li class="cabeçalho__lista--item"><a href="#" class="cabeçalho__lista--link">Favoritos</a></li>
+            <li class="cabeçalho__lista--item"><a href="#" class="cabeçalho__lista--link">Minha Estante</a></li>
+        </ul>
+        <div class="cabeçalho__container">
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="" class="container__imagem container__imagem--transparente">
+            </a>
+            <a href="#" class="cabeçalho__container--link">
+                <img src="img/Sacola.png" alt="" class="container__imagem">
+                <p class="cabeçalho__container--descricao">Minha Sacola</p>
+            </a>
+            <a href="#" class="cabeçalho__container--link">
+                <img src="img/Usuario.png" alt="" class="container__imagem">
+                <p class="cabeçalho__container--descricao">Meu Perfil</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input class="banner__pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+            <!-- Slider main container -->
+            <div class="carrossel__conteiner">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/ApacheKafka.png"></div>
+                        <div class="swiper-slide"><img src="img/Liderança.png"></div>
+                        <div class="swiper-slide"><img src="img/Javascript.png"></div>
+                        <div class="swiper-slide"><img src="img/Portugol.png"></div>
+                        <div class="swiper-slide"><img src="img/Guia%20Front-end.png"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao__descricao">
+                        <div class="cartao__descricao--descricao">
+                            <h3 class="cartao__titulo-secundario">Talvez você também se interesse por...</h3>
+                            <h2 class="cartao__titulo-principal">Angular 11 e Firebase</h2>
+                            <p class="cartao__sobre">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <img src="img/Angular.png" class="cartao__descricao--imagem">
+                    </div>
+                    <div class="cartao__botoes">
+                        <ul class="botoes">
+                            <li><img src="img/Favoritos.svg" class="botoes__item"></li>
+                            <li><img src="img/Compras.svg" class="botoes__item"></li>
+                        </ul>
+                        <a class="botao__ancora" href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+            <!-- Slider main container -->
+            <div class="carrossel__conteiner">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Javascript.png"></div>
+                        <div class="swiper-slide"><img src="img/Portugol.png"></div>
+                        <div class="swiper-slide"><img src="img/Guia%20Front-end.png"></div>
+                        <div class="swiper-slide"><img src="img/ApacheKafka.png"></div>
+                        <div class="swiper-slide"><img src="img/Liderança.png"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao__descricao">
+                        <div class="cartao__descricao--descricao">
+                            <img src="img/Estrelinhas.png" class="cartao__avaliacao">
+                            <h3 class="cartao__titulo-secundario">Autora do mês</h3>
+                            <h2 class="cartao__titulo-principal">Juliana Agarikov</h2>
+                            <p class="cartao__sobre">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
+                        </div>
+                        <img src="img/Perfil-escritora%201.png" class="cartao__descricao--imagem">
+                    </div>
+                    <div class="cartao__botoes">
+                        <ul class="botoes">
+                            <li><img src="img/Favoritos.svg" class="botoes__item"></li>
+                            <li><img src="img/Compras.svg" class="botoes__item"></li>
+                        </ul>
+                        <a class="botao__ancora" href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="topicos">
+            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Android</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Marketing Digital</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Agile</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Startups</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">HTML & CSS</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Python</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">OO</a>
+                </li>
+                <li class="topicos__lista--item">
+                    <a class="topicos__lista--link">Java</a>
+                </li>
+            </ul>
+        </section>
+        <section class="novidades novidades__container">
+            <h2 class="novidades__titulo">Fique por dentro das novidades!</h2>
+            <p class="novidades__descricao">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" placeholder="Cadastre seu e-mail" class="novidades__email">
+        </section>
+    </main>
+    <footer class="rodape">
+        <hr/>
+        <div class="rodape__container">
+            <h2 class="rodape__titulo">Grupo Alura</h2>
+            <ul class="rodape__lista">
+                <li class="rodape__lista--titulo">Educação</li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/Caelum.png">
+                    <a class="rodape__lista--link">Caelum</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/CasaDoCodigo.png">
+                    <a class="rodape__lista--link">Casa do Código</a>
+                </li>
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__lista--titulo">Educação Online</li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/Alura.png">
+                    <a class="rodape__lista--link">Alura</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/AluraEmpresas.png">
+                    <a class="rodape__lista--link">Alura para Empresas</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/AluraLatam.png">
+                    <a class="rodape__lista--link">Alura LATAM</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/AluraStart.png">
+                    <a class="rodape__lista--link">Alura Start</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem"src="img/MusicDot.png">
+                    <a class="rodape__lista--link">MusicDot</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/AluraLingua.png">
+                    <a class="rodape__lista--link">Alura Língua</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/PM3.png">
+                    <a class="rodape__lista--link">PM3</a>
+                </li>
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__lista--titulo">Comunidade</li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/HipstersTech.png">
+                    <a class="rodape__lista--link">Hipsters ponto Tech</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/Scuba.png">
+                    <a class="rodape__lista--link">Scuba Dev</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/Layers.png">
+                    <a class="rodape__lista--link">Layers ponto Tech</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/LikeABoss.png">
+                    <a class="rodape__lista--link">Like a Boss</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/CarreiraSemFronteira.png">
+                    <a class="rodape__lista--link">Carreira sem Fronteira</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/HipstersJobs.png">
+                    <a class="rodape__lista--link">Hipsters ponto Jobs</a>
+                </li>
+                <li class="rodape__lista--item">
+                    <img class="rodape__lista--imagem" src="img/GUJ.png">
+                    <a class="rodape__lista--link">GUJ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            spaceBetween:10,
+            slidesPerView:3,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type:'bullets',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
