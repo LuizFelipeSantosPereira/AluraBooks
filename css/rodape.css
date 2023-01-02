@@ -62,7 +62,4 @@
         border-left: var(--cinza-claro) solid 1px;
         padding-left: 1em;
     }
-    .rodape__lista{
-        padding: 3em;
-    }
 }
